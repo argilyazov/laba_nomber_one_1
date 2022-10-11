@@ -40,14 +40,10 @@
 ## Задание 1
 ### Написание программмы выводящей hello world на python и Unity
 Ход работы:
-- Создание файла гугл колаб на диске
-![image](https://user-images.githubusercontent.com/103649799/192361456-c3b38578-9ca6-4bef-8432-4dc75ca9a239.png)
+![image](https://user-images.githubusercontent.com/103649799/195152500-3f337684-5118-4306-ade2-c11dccd7d9f8.png)
+![image](https://user-images.githubusercontent.com/103649799/195152392-cc1259a6-b3c8-4b24-90d4-67b80283ea8d.png)
+![image](https://user-images.githubusercontent.com/103649799/195152652-5e813c07-7485-4e15-ae9b-4cd1de2facad.png)
 
-- Написание самой программы
-![image](https://user-images.githubusercontent.com/103649799/192361299-7c7545d2-f3b6-4823-9b6e-54797b458aae.png)
-
-- Вывод на консоль hello world в unity
-![image](https://user-images.githubusercontent.com/103649799/192361356-88056b2c-d72f-454c-bff7-7992f0659892.png)
 
 
 ## Задание 2
