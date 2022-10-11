@@ -38,12 +38,17 @@
 Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
 
 ## Задание 1
-### Написание программмы выводящей hello world на python и Unity
+### Реализовать совместную работу и передачу данных в связке Python - Google-Sheets – Unity. 
 Ход работы:
+ - Создание API
 ![image](https://user-images.githubusercontent.com/103649799/195152500-3f337684-5118-4306-ade2-c11dccd7d9f8.png)
 ![image](https://user-images.githubusercontent.com/103649799/195152392-cc1259a6-b3c8-4b24-90d4-67b80283ea8d.png)
+ - Заполнение таблицы с помощью скрипта
 ![image](https://user-images.githubusercontent.com/103649799/195152652-5e813c07-7485-4e15-ae9b-4cd1de2facad.png)
-
+ - Вывод данных из таблицы и воспроизведение звуков, в зависимости от результата
+![image](https://user-images.githubusercontent.com/103649799/195164904-c8fe5b8e-b4ed-4a5c-bc21-c4134799ed1e.png)
+ - код в VSCode
+![image](https://user-images.githubusercontent.com/103649799/195165027-2c84db5b-4a7b-4cb6-9f3d-7bc9eb6e7f7f.png)
 
 
 ## Задание 2
