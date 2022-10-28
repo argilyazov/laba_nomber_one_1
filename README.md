@@ -35,109 +35,32 @@
 - ✨Magic ✨
 
 ## Цель работы
-Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
+Познакомиться с программными средствами для создания системы машинного обучения и ее интеграции в Unity.
 
 ## Задание 1
-### Написание программмы выводящей hello world на python и Unity
+### Реализовать систему машинного обучения в связке Python - Google-Sheets – Unity. 
 Ход работы:
-- Создание файла гугл колаб на диске
-![image](https://user-images.githubusercontent.com/103649799/192361456-c3b38578-9ca6-4bef-8432-4dc75ca9a239.png)
-
-- Написание самой программы
-![image](https://user-images.githubusercontent.com/103649799/192361299-7c7545d2-f3b6-4823-9b6e-54797b458aae.png)
-
-- Вывод на консоль hello world в unity
-![image](https://user-images.githubusercontent.com/103649799/192361356-88056b2c-d72f-454c-bff7-7992f0659892.png)
+- Созданы объекты куб, шар, плоскость, так же созданы для них материалы
+![image](https://user-images.githubusercontent.com/103649799/198530109-8a4c2c73-ad39-404b-9419-157fa68beae3.png)
+- Скачаны необходимые пакеты для юнити, параллельно с этим в анаконде созано окружение, и закачены модули
+![image](https://user-images.githubusercontent.com/103649799/198530284-04f17c71-63f3-4e31-8d71-f561ecefa467.png)
+- Создан скрипт для сферы, и подключены все необходимые компоненты для сферы
+![image](https://user-images.githubusercontent.com/103649799/198530645-9793a885-072c-4f90-bd71-ef1dfb85d7cb.png)
+- В папку с проектом добавляем файл конфигурации нейронной сети
+![image](https://user-images.githubusercontent.com/103649799/198531111-59104f5c-24c5-4ee3-8c22-9530d205f0d3.png)
+- Соединяем конду с юнити и запускаем работу агента
+![image](https://user-images.githubusercontent.com/103649799/198531600-6fe84dad-3021-42dd-b44e-6613555ec289.png)
+- Запускаем сцену в юнити, удостоверяемся что шарик бегает и все работает
+![image](https://user-images.githubusercontent.com/103649799/198531664-e0f0717f-9d6f-4e30-917c-a5dda39f6d43.png)
+- Отчет работы агента
+![image](https://user-images.githubusercontent.com/103649799/198531743-cf953baa-07e3-418e-83c3-3548e9eea918.png)
+- Создадим несколько копий сцен, чтобы обучение шло активнее, если точно то 256 копий
+![image](https://user-images.githubusercontent.com/103649799/198533026-5891fc86-c312-49e1-8325-ed0d0bcabd0b.png)
 
 
 ## Задание 2
 ### Скопровать и выполнить код.
-
 Ход работы:
-- Произвести подготовку данных для работы с алгоритмом линейной регрессии. 10 видов данных были установлены случайным образом, и данные находились в линейной зависимости. Данные преобразуются в формат массива, чтобы их можно было вычислить напрямую при использовании умножения и сложения.
-
-```py
-In [ ]:
-#Import the required modules, numpy for calculation, and Matplotlib for drawing
-import numpy as np
-import matplotlib.pyplot as plt
-#This code is for jupyter Notebook only
-%matplotlib inline
-# define data, and change list to array
-x = [3,21,22,34,54,34,55,67,89,99]
-x = np.array(x)
-y = [2,22,24,65,79,82,55,130,150,199]
-y = np.array(y)
-#Show the effect of a scatter plot
-plt.scatter(x,y)
-```
-![image](https://user-images.githubusercontent.com/103649799/192361978-8e197a6a-ad4f-49bd-8ded-2a7c9dcfcb99.png)
-
-
-- Определите связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: метод градиентного спуска для нахождения частных производных w и b.
-
-```py
-def model(a, b, x):
-    return a * x + b
- 
- 
-def loss_function(a, b, x, y):
-    num = len(x)
-    prediction = model(a, b, x)
-    return (0.5 / num) * (np.square(prediction - y)).sum()
- 
- 
-def optimize(a, b, x, y):
-    num = len(x)
-    prediction = model(a, b, x)
-    da = (1.0 / num) * ((prediction - y) * x).sum()
-    db = (1.0 / num) * ((prediction - y).sum())
-    a = a - Lr * da
-    b = b - Lr * db
-    return a, b
- 
- 
-def iterate(a, b, x, y, times):
-    for i in range(times):
-        a, b = optimize(a, b, x, y)
-    return a, b
-```
-- Первая итерация
-
-```py
-a = np.random.rand(1)
-b = np.random.rand(1)
-Lr = 0.000001
- 
-a, b = iterate(a, b, x, y, 1)
-prediction = model(a, b, x)
-loss = loss_function(a, b, x, y)
-print(a, b, loss)
-plt.scatter(x, y)
-plt.plot(x, prediction)
-```
-![image](https://user-images.githubusercontent.com/103649799/192363196-be92b3b3-1d54-4fcf-bc2f-3f81afd84e05.png)
-
-- Вторая итерация
-
-![image](https://user-images.githubusercontent.com/103649799/192363239-06619adb-79c1-47e7-b627-82d7a76194c8.png)
-
-- Третья итерация
-
-![image](https://user-images.githubusercontent.com/103649799/192363283-ce4e216d-5ee3-4764-857b-de87263c79c4.png)
-
-- Четвертая итерация
-
-![image](https://user-images.githubusercontent.com/103649799/192363348-a15b3802-7fd8-41eb-ad37-92edd40fb513.png)
-
-- Пятая итерация 
-
-![image](https://user-images.githubusercontent.com/103649799/192363380-12d40e2a-e8b2-4da3-945b-bf155d1a6117.png)
-
-- 1000-я итерация
-
-![image](https://user-images.githubusercontent.com/103649799/192363444-db06d8a0-e8a2-402d-9144-5632be84a059.png)
-
 
 
 ## Задание 3
@@ -145,22 +68,10 @@ plt.plot(x, prediction)
 Ход работы:
 
 
-- Первый вопрос.Чем ближе к прямой будут входные данные х и у, тем меньше будет переменная loss, визуализируящая отклонение от прямой, т.к. loss зависит от суммы квадратов расстояний отвходных точек до прямой
-
-Пример упорядоченных данных:
-![image](https://user-images.githubusercontent.com/103649799/192366795-55cda95a-49fb-4b1f-85a7-2e48328b5f9d.png)
-![image](https://user-images.githubusercontent.com/103649799/192366861-d62de4ed-8b5b-48e5-b032-1b66f4152953.png)
-
-Пример данных при которых точки максимально отдалены от прямой:
-![image](https://user-images.githubusercontent.com/103649799/192367559-2cc9f0d0-cd5d-45ff-b637-963e993779ff.png)
-
-- Второй вопрос: Величина lr  изменяетугол наклона синей прямой и угол наклонапряомй проведенной через точки, при увеличении первого уменьшается второе
-![image](https://user-images.githubusercontent.com/103649799/192370859-53380026-66b1-4ad7-8328-3ef42c2d89ea.png)
-![image](https://user-images.githubusercontent.com/103649799/192370954-db87bbc7-85d9-4eee-b4e8-6d4b7cdae6a5.png)
 
 ## Выводы
 
-Я установил Юнити и узнал, как в нем создаются объекты и как присваивать им скрипты, узнал что такое линейная регрессия, и за что отвечают ее входные и выходные праметры
+
 
 | Plugin | README |
 | ------ | ------ |
