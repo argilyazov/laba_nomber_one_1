@@ -91,13 +91,15 @@
 ### Доработайте сцену и обучите ML-Agent таким образом, чтобы шар перемещался между двумя кубами разного цвета. Кубы должны, как и в первом задании, случайно изменять координаты на плоскости. 
 Ход работы:
 -Создаем еще один куб и переписываем скрипт для двух целей
-
+![image](https://user-images.githubusercontent.com/103649799/198831623-fada6265-2bc4-47c0-bf79-b42a4e47d496.png)
 ![image](https://user-images.githubusercontent.com/103649799/198831256-e8c10df4-94b1-4166-929a-d8cb900e06bb.png)
 - Заново обучаем наш шар
 ![image](https://user-images.githubusercontent.com/103649799/198831055-11ede788-a90d-4f24-83af-9190528628d6.png)
 ![image](https://user-images.githubusercontent.com/103649799/198831245-4b47b4f9-5402-46d0-97f4-bee0b8ecc5ab.png)
+- Добавляем модель поведения шару и проверяем
+![image](https://user-images.githubusercontent.com/103649799/198831965-63cefac9-80bb-44b2-af9b-2410861c6979.png)
 
-
+Как видим все хорошо работает
 
 
 ## Выводы
