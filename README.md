@@ -54,6 +54,7 @@
 ## Задание 2
 ### Создать графики зависимости количества эпох от количества ошибок для каждого оператора
 Ход работы:
+
 ![image](https://user-images.githubusercontent.com/103649799/204584612-f01713d0-e5ae-474d-b3d4-75bb713a3f30.png)
 ![image](https://user-images.githubusercontent.com/103649799/204584637-dc515c1e-a9ea-44f6-af7d-90c4679113ab.png)
 ![image](https://user-images.githubusercontent.com/103649799/204584647-e6e211d6-720b-42b5-9699-07dbcfb4c5f5.png)
@@ -62,15 +63,27 @@
   
  
 ## Задание 3
-### 
-
+### Визуализировать работу перцептрона
 Ход работы:
+Начальное положение кубиков, красный-1, желтый-0
+![image](https://user-images.githubusercontent.com/103649799/204598923-c53799c0-1041-4173-8723-5b41b96e9855.png)
 
+Результаты работы операторов:
+- Оператор OR
+![image](https://user-images.githubusercontent.com/103649799/204598993-5cd7518c-f56f-4733-9c6f-c6d75564db05.png)
 
+- Оператор AND
+ ![image](https://user-images.githubusercontent.com/103649799/204599331-91239eee-9033-4956-8af6-9a8c7bad1823.png)
+
+- Оператор NAND
+ ![image](https://user-images.githubusercontent.com/103649799/204599436-87a161e7-49cd-4a99-837f-c2c4b056b7dc.png)
+
+- Оператор XOR
+![image](https://user-images.githubusercontent.com/103649799/204599564-7c999c8d-4154-4239-8356-bd9162f96d48.png)
 
 
 ## Выводы
-
+Я узнал как работает перцептрон, попробовал обучить его и выяснил почему перцептрон не может обучиться оператору xor
 
 
 | Plugin | README |
