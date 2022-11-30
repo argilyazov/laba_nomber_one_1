@@ -74,8 +74,6 @@
 ```strength: 1.0```
 ```gamma: 0.7```
 
-![image](https://user-images.githubusercontent.com/103649799/204926418-2810be8d-a803-4c77-a529-a7fae0eed994.png)
-
 При таких данных график тоже ровный
 
 ![image](https://user-images.githubusercontent.com/103649799/204920597-25377522-a958-4c38-914f-9b42bbb59fb9.png)
