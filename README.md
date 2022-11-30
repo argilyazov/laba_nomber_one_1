@@ -47,13 +47,21 @@
 ![image](https://user-images.githubusercontent.com/103649799/204909305-20081cca-4742-4f66-b00b-087cfca66d3d.png)
 
 -Принимаем результаты
-![image](https://user-images.githubusercontent.com/103649799/204908840-dfd0ce49-9d8e-4d20-9a15-1421bbd883db.png)
+![image](https://user-images.githubusercontent.com/103649799/204912925-e113bb21-e7d0-4d80-afdf-1c0304e1145d.png)
 
 
 ## Задание 2
 ### Визуализировать данные обучения
 Ход работы:
+- Теперь скачаем библиотеку для визуализации наших данных
+![image](https://user-images.githubusercontent.com/103649799/204914095-79302aec-db83-4c02-9c6f-0e939ead9309.png)
 
+- Смотрим графики первого обучения, график наград идет вверх, а loss вниз, что хорошо
+![image](https://user-images.githubusercontent.com/103649799/204914083-9e60c7f2-098d-4fa7-8aa3-34a828f756b5.png)
+
+- Далее меняем праметры yaml файла и смотрим результаты и так пять раз:
+- меняем strength на 0.5
+- ![image](https://user-images.githubusercontent.com/103649799/204915059-7caa4e80-81ac-4892-8b73-7cbe99388924.png)
 
 ## Задание 3
 ### 
