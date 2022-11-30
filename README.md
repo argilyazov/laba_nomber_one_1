@@ -60,9 +60,12 @@
 ![image](https://user-images.githubusercontent.com/103649799/204914083-9e60c7f2-098d-4fa7-8aa3-34a828f756b5.png)
 
 - Далее меняем праметры yaml файла и смотрим результаты и так пять раз:
-- меняем strength на 0.5
-- ![image](https://user-images.githubusercontent.com/103649799/204915059-7caa4e80-81ac-4892-8b73-7cbe99388924.png)
 
+```strength: 0.5```
+![image](https://user-images.githubusercontent.com/103649799/204917059-01f3bfc3-aabc-4eb0-90cf-97bfa16c6f8d.png)
+При таких значениях график наград стал убывающим
+
+```strength: 1.5```
 ## Задание 3
 ### 
 
